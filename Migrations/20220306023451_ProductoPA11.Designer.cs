@@ -11,7 +11,7 @@ using Tarea6Detalle.DAL;
 namespace Tarea6Detalle.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20220306010321_ProductoPA11")]
+    [Migration("20220306023451_ProductoPA11")]
     partial class ProductoPA11
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
