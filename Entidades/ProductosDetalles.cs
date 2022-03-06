@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Tarea6Detalle.Entidades
 {
@@ -15,6 +16,8 @@ namespace Tarea6Detalle.Entidades
         public decimal Cantidad { get; set; }
         public decimal Precio { get; set; }
         public decimal ExistenciaEmpaque {get; set;}
+
+
     }
 
     

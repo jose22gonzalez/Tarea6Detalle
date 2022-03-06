@@ -31,6 +31,7 @@
         <table class="table table-light">
             <thead class="thead">
                 <tr class="table">
+                    <th>Id</th>
                     <th>Producto Id</th>
                     <th>Descripcion</th>
                     <th>Presentacion</th>
@@ -39,9 +40,10 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach(var item in productos.ProductosDetalles)
+                @foreach(var item in listaD)
                 {
                     <tr>
+                        <td>@item.Id</td>
                         <td>@item.ProductoId</td>
                         <td>@item.Descripcion</td>
                         <td>@item.Presentacion</td>
@@ -58,6 +60,7 @@
    
     public Productos productos { get; set; } = new Productos();
     public ProductosDetalles productosDetalles;
+    public List<ProductosDetalles> listaD = new List<ProductosDetalles>();
 
     public string? Filtro { get; set; }
     public string? Criterio { get; set; }
@@ -67,8 +70,25 @@
 
     private void Buscar()
     {
-        productos.ProductosDetalles.ToList();
-        
+         if(Criterio != null)
+        {
+            switch (Filtro)
+            {
+                case "1":
+                    listaD = productoBBL.GetListD(p => p.ProductoId == int.Parse(Criterio));
+                    break;
+                case "2":
+                    listaD = productoBBL.GetListD(c => c.Descripcion.ToLower().Contains(Criterio.ToLower()));
+                    break;
+                case "3":
+                    listaD = productoBBL.GetListD(p => p.Presentacion.ToLower().Contains(Criterio.ToLower()));
+                    break;
+            }
+        }else{
+            
+            listaD = productoBBL.GetListD(c => true); 
+        }
+       
     }
 
    

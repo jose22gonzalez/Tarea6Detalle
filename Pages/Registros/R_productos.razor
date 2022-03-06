@@ -172,6 +172,11 @@
         productos.ValorInventario = productos.Costo * productos.Existencia;
     }
 
+    public void CalcularEmpaque()
+    {
+        productosDetalles.ExistenciaEmpaque = ((int)productos.Existencia / (int)productosDetalles.Cantidad);
+    }
+
     public void Buscar()
     {
         if (this.productos.ProductoId > 0)
@@ -194,6 +199,7 @@
     public void AgregarDetalle()
     {
         this.productos.ProductosDetalles.Add(productosDetalles);
+         CalcularEmpaque();
     }
 
     private void RemoverFila(ProductosDetalles item)
