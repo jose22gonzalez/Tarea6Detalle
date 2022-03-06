@@ -1,7 +1,7 @@
 @page "/C_ProductosDetalles"
 
 <EditForm Model="productos.ProductosDetalles">
-    <DataAnnotationsValidator/>
+    <DataAnnotationsValidator />
     <div class="card">
         <div class="card-header">
             <h3>Consulta de Detalles Producto</h3>
@@ -19,11 +19,11 @@
                     </div>
                     <div class="flex-fill mx-2">
                         <label>Criterio</label>
-                        <input type="text" class="form-control" @bind="Criterio"/>
+                        <input type="text" class="form-control" @bind="Criterio" />
                     </div>
 
                     <button type="button" class="btn btn-warning" @onclick="Buscar">
-                        <i class="oi oi-magnifying-glass mr-2" > Buscar</i>
+                        <i class="oi oi-magnifying-glass mr-2"> Buscar</i>
                     </button>
                 </div>
             </form>
@@ -40,7 +40,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach(var item in listaD)
+                @foreach (var item in listaD)
                 {
                     <tr>
                         <td>@item.Id</td>
@@ -49,15 +49,17 @@
                         <td>@item.Presentacion</td>
                         <td>@item.Precio</td>
                         <td>@item.ExistenciaEmpaque</td>
+
                     </tr>
                 }
+
             </tbody>
         </table>
     </div>
 </EditForm>
 
-@code{
-   
+@code {
+
     public Productos productos { get; set; } = new Productos();
     public ProductosDetalles productosDetalles;
     public List<ProductosDetalles> listaD = new List<ProductosDetalles>();
@@ -70,7 +72,8 @@
 
     private void Buscar()
     {
-         if(Criterio != null)
+    
+        if (Criterio != null)
         {
             switch (Filtro)
             {
@@ -84,13 +87,15 @@
                     listaD = productoBBL.GetListD(p => p.Presentacion.ToLower().Contains(Criterio.ToLower()));
                     break;
             }
-        }else{
-            
-            listaD = productoBBL.GetListD(c => true); 
         }
-       
+        else
+        {
+
+            listaD = productoBBL.GetListD(c => true);
+        }
+
     }
 
-   
-    
+
+
 }
