@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Tarea6Detalle.Migrations
+namespace Jose_Gonzalez_Ap1_p2.Migrations
 {
-    public partial class ProductoPA11 : Migration
+    public partial class ProductoPA12 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -21,7 +21,8 @@ namespace Tarea6Detalle.Migrations
                     Costo = table.Column<double>(type: "REAL", nullable: false),
                     ValorInventario = table.Column<double>(type: "REAL", nullable: false),
                     Ganancia = table.Column<int>(type: "INTEGER", nullable: false),
-                    Precio = table.Column<int>(type: "INTEGER", nullable: false)
+                    Precio = table.Column<int>(type: "INTEGER", nullable: false),
+                    Peso = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {

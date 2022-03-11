@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace Tarea6Detalle.Entidades
+namespace Jose_Gonzalez_Ap1_p2.Entidades
 {
     public class Productos
     {
@@ -29,6 +29,7 @@ namespace Tarea6Detalle.Entidades
         public int Ganancia { get; set; }
         
         public int Precio { get; set; }
+        public int Peso { get; set; }
       
         [ForeignKey("ProductoId")]
         public virtual List<ProductosDetalles> ProductosDetalles {get; set;} = new List<ProductosDetalles>();

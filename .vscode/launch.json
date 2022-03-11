@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/bin/Debug/net6.0/Tarea6Detalle.dll",
+            "program": "${workspaceFolder}/bin/Debug/net6.0/Jose_Gonzalez_Ap1_p2.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,

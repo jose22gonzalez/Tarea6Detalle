@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Tarea6Detalle.csproj",
+                "${workspaceFolder}/Jose_Gonzalez_Ap1_p2.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Tarea6Detalle.csproj",
+                "${workspaceFolder}/Jose_Gonzalez_Ap1_p2.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/Tarea6Detalle.csproj"
+                "${workspaceFolder}/Jose_Gonzalez_Ap1_p2.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

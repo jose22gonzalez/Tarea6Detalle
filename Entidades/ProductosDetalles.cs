@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Tarea6Detalle.Entidades
+namespace Jose_Gonzalez_Ap1_p2.Entidades
 {
     public class ProductosDetalles
     {

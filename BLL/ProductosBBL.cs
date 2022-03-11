@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using Tarea6Detalle.DAL;
-using Tarea6Detalle.Entidades;
+using Jose_Gonzalez_Ap1_p2.DAL;
+using Jose_Gonzalez_Ap1_p2.Entidades;
 using Microsoft.EntityFrameworkCore;
 
-namespace Tarea6Detalle.BLL
+namespace Jose_Gonzalez_Ap1_p2.BLL
 {
     public class ProductosBBL
     {

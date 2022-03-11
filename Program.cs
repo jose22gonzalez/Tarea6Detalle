@@ -1,12 +1,10 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using Tarea6Detalle.Data;
-using Tarea6Detalle.DAL;
+using Jose_Gonzalez_Ap1_p2.Data;
+using Jose_Gonzalez_Ap1_p2.DAL;
 using Microsoft.EntityFrameworkCore;
-using Tarea6Detalle.BLL;
+using Jose_Gonzalez_Ap1_p2.BLL;
 using Blazored.Toast;
-
-
 
 var builder = WebApplication.CreateBuilder(args);
 

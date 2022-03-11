@@ -78,6 +78,11 @@
                     <InputNumber @bind-Value = "productos.Precio" class="form-control"/>
                     <ValidationMessage For="@(() =>productos.Precio)"/>
                 </div>
+                @*Peso*@
+                <div class="form-group">
+                    <label>Peso</label>
+                    <InputNumber @bind-Value = "productos.Peso" class="form-control"/>
+                </div>
             </form>
             <div class="card">
                 <div class="card-header">

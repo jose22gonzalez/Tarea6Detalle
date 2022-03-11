@@ -1,4 +1,4 @@
-namespace Tarea6Detalle.Data;
+namespace Jose_Gonzalez_Ap1_p2.Data;
 
 public class WeatherForecastService
 {

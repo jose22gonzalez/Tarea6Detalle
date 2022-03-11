@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Tarea6Detalle.Entidades;
+using Jose_Gonzalez_Ap1_p2.Entidades;
 
-namespace Tarea6Detalle.DAL
+namespace Jose_Gonzalez_Ap1_p2.DAL
 {
     public class Contexto : DbContext
     {
